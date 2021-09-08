@@ -1,0 +1,38 @@
+---
+title: "HW 3"
+author: "Nicholas Alexeev"
+date: "9/8/2021"
+output: pdf_document
+---
+# 1. Devore§2.1 # 6.  A college library has five copies of a certain text on reserve.  Twocopies  (1  and  2)  are  first  printings,  and  the  other  three  (3,  4,  and  5)  are  secondprintings.  A student examines these books in random order, stopping only when asecond printing has been selected.  One possible outcome is 5, and another is 213
+## a. List the outcomes in S.
+## b. Let A denote the event that exactly one book must be examined. What outcomesare in A?
+## c. Let B be the event that book 5 is the one selected.  What outcomes are in B?
+## d. LetCbe the event that book 1 is not examined.  What outcomes are in C?
+# 2. Devore§2.1 # 7.  An academic department has just completed voting by secret ballotfor a department head.  The ballot box contains three slips with votes for candidateA and two slips with votes for candidate B. Suppose these slips are removed from thebox one by one.
+## a. List all possible outcomes
+## b. Suppose a running tally is kept as slips are removed.  For what outcomes doesAremain ahead ofBthroughout the tally?
+# 3. Devore§2.2 # 14.  (p. 64) Suppose that 60% of all adults regularly consume coffee,45% regularly consume carbonated soda, and 80% regularly consume at least one ofthese two products.
+## a. What is the probability that a randomly selected adult regularly consumes bothcoffee and soda?
+## b. What is the probability that a randomly selected adult doesn’t regularly consumeat least one of these two products?
+# 4. Devore§2.3 # 24.  Show that if one eventAis contained in another event B(i.e.,Ais a subset of B) then $P(A) \leq P(B)$.  [Hint:  For such A and B,A and $B \cap A'$ are disjoint (why??) and $B=A\cup (B \cap A')$ as can be seen from a Venn diagram.] For general A and B, what does this imply about the relationship among $P(A\cap B)$ ,$P(A)$ ,and $P(A\cup B)$
+# 5. Devore§2.3  #  31.   (p.  73)  The  composer  Beethoven  wrote  9  symphonies,  5  piano concertos (music for piano and orchestra) and 32 piano sonatas (music for solo piano).
+## a. How  many  ways  are  there  to  play  first  a  Beethoven  symphony  and  then  aBeethoven piano concerto?
+## b. he  manager  of  a  radio  station  decides  that  on  each  successive  night  (7  daysper week), a Beethoven symphony will be played, followed by a Beethoven pianoconcerto,  followed by a Beethoven piano sonata.  For roughly how many yearscould this policy be continued before exactly the same program would have tobe repeated?
+
+Foo
+
+# 6. Devore§2.3 # 36.  An academic department with five faculty members narrowed itschoice for department head to either candidate A or candidate B. Each member thenvoted on a slip of paper for one of the candidates.  Suppose there are actually threevotes for A and two for B. If the slips are selected for tallying in random order, whatis  the  probability  that  A  remains  ahead  of  B  throughout  the  vote  count  (e.g.,  thisevent occurs if the selected ordering is AABAB, but not for ABBAA)?
+
+# 7.  Devore§2.3 # 39.  A box in a supply room contains 15 compact fluorescent lightbulbs,of which 5 are rated 13-watt, 6 are rated 18-watt, and 4 are rated 23-watt.  Supposethat three of these bulbs are randomly selected
+## a. What is the probability that exactly two of selected bulbs are rated 23-watt?
+## b. What is the probability that all three of the bulbs have the same rating?
+## c. What is the probability that one bulb of each type is selected?
+## d. If bulbs  are  selected  one  by  one  until  a  23-watt  bulb  is  obtained,  what  is  theprobability that it is necessary to examine at least 6 bulbs?
+
+# 8. Devore§2.3 # 43.  In five-card poker, a straight consists of five cards with adjacentdenominations (e.g., 9 of clubs, 10 of hearts, jack of hearts, queen of spades, and kingof clubs).  Assuming that aces can be high or low, if you are dealt a five-card hand,what  is  the  probability  that  it  will  be  a  straight  with  high  card  10?   What  is  theprobability that it will be a straight?  What is the probability that it will be a straightflush (all cards in the same suit)?
+#  9. Shade the Venn diagrams that are shown in the file “venn.pdf”, which is posted onCanvas (under Files).
+
+# 10.
+## a. In how many ways can 8 players be divided into teams of size 3 and 5?  Explain.
+## b. In how many ways can 8 players be divided into teams of size 4 and 4?  Explain.
