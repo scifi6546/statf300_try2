@@ -152,6 +152,18 @@ $$
 f_Y(y) = \frac{ny^{n-1}}{\theta^n}
 $$
 
+$$
+F_y(y) = P(Y\leq y)= P(max(X_i)\leq y)
+$$
+$$
+F(y) = P(x_1\leq y)*P(x_2\leq y)*...*P(x_n\leq y)
+$$
+$$
+F(Y) = \left(\frac{y}{\theta}\right)^n
+$$
+$$
+f(Y) = (F(Y))' = \frac{ny^{n-1}}{\theta^n}
+$$
 
 ## b. Use the result of part (a) to show that the MLE is biased, but y(n+1)/n is unbiased for Theta.
 
