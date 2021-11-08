@@ -1,0 +1,274 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{R Notebook}
+\author{}
+\date{\vspace{-2.5em}}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={R Notebook},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+\hypertarget{modified-9.-each-of-150-newly-manufactured-items-is-examined-and-the-numberof-scratches-per-item-is-recorded.-the-items-are-supposed-to-be-free-of-scratches.-hereis-the-data}{%
+\section{1. §6.1 Modified \#9. Each of 150 newly manufactured items is
+examined, and the numberof scratches per item is recorded. (The items
+are supposed to be free of scratches.) Hereis the
+data:}\label{modified-9.-each-of-150-newly-manufactured-items-is-examined-and-the-numberof-scratches-per-item-is-recorded.-the-items-are-supposed-to-be-free-of-scratches.-hereis-the-data}}
+
+\hypertarget{a.-find-an-unbiased-estimator-of-mu-and-compute-the-estimate-for-the-data.-hint-ex-mu-forxpoisson-so-ex-hint-2you-can-see-that-2-is-the-mostfrequent-observed-count-so-your-estimate-formu-should-probably-be-pretty-close-to-2.}{%
+\subsection{\texorpdfstring{a. Find an unbiased estimator of \[\mu\] and
+compute the estimate for the data. {[}Hint: E(X) =\[\mu\] forXPoisson,
+so E(X) = ?{]} {[}Hint 2:You can see that ``2'' is the mostfrequent
+observed count, so your estimate for\[\mu\] should probably be pretty
+close to
+2.{]}}{a. Find an unbiased estimator of \textbackslash mu and compute the estimate for the data. {[}Hint: E(X) =\textbackslash mu forXPoisson, so E(X) = ?{]} {[}Hint 2:You can see that ``2'' is the mostfrequent observed count, so your estimate for\textbackslash mu should probably be pretty close to 2.{]}}}\label{a.-find-an-unbiased-estimator-of-mu-and-compute-the-estimate-for-the-data.-hint-ex-mu-forxpoisson-so-ex-hint-2you-can-see-that-2-is-the-mostfrequent-observed-count-so-your-estimate-formu-should-probably-be-pretty-close-to-2.}}
+
+\[
+\lambda = \frac{\sum i*X_i}{n} = \frac{14*0+35*1+43*2+28*3+4*17+5*10+6*2+1*7}{150} = \frac{342}{150} = 2.28
+\] \[
+E(\bar{X})=E(X) = \lambda=2.28
+\] \#\# b. What is the standard deviation (standard error) of youur
+estimator? Compute the estimated standard error. {[}Hint std\^{}2 = mean
+for X{]} For poisson distribution \[V(x) = \lambda = 2.28\],
+\[V(\bar{x}) = \frac{V(x)}{n} = \frac{2.28}{150} = 0.0152\]
+
+\hypertarget{of-n1-randomly-selected-male-smokers-x1-smoked-filter-cigarettes-whereasof-n2-randomly-selected-female-smokers-x2-smoked-filter-cigarettes.-let-p1-and-p2-denote-the-probabilities-that-a-randomly-selected-male-and-femal-respectively-smokefilter-cigarettes.}{%
+\section{2. 6.1 \#11. Of n1 randomly selected male smokers, X1 smoked
+filter cigarettes, whereasof n2 randomly selected female smokers, X2
+smoked filter cigarettes. Let p1 and p2 denote the probabilities that a
+randomly selected male and femal, respectively, smokefilter
+cigarettes.}\label{of-n1-randomly-selected-male-smokers-x1-smoked-filter-cigarettes-whereasof-n2-randomly-selected-female-smokers-x2-smoked-filter-cigarettes.-let-p1-and-p2-denote-the-probabilities-that-a-randomly-selected-male-and-femal-respectively-smokefilter-cigarettes.}}
+
+\hypertarget{a.-show-that-x1n1x2n2-is-an-unbiased-estimator-for-p1-p2.}{%
+\subsection{a. Show that (X1/n1−X2/n2) is an unbiased estimator for p1 −
+p2.}\label{a.-show-that-x1n1x2n2-is-an-unbiased-estimator-for-p1-p2.}}
+
+\[
+p_1 - p_2 = E(x_1)-E(x_2) = \frac{x_1}{n_1}-\frac{x_2}{n_2}
+\] \#\# b. What is the standard error of the estimator in (a)?
+
+\[
+Var(p_1-p_2) = Var(p_1)+Var(P_2) = n_1p_1(1-p_1) +n_2p_2(1-p_2)
+\] \[
+Standard Error =\sqrt{Var(p_1-p_2)} = \sqrt{n_1p_1(1-p_1) +n_2p_2(1-p_2)}
+\]
+
+\hypertarget{c.-how-would-you-use-the-observed-values-x1-and-x2-to-estimate-the-standard-error-of-your-estimator}{%
+\subsection{c.~How would you use the observed values x1 and x2 to
+estimate the standard error of your
+estimator?}\label{c.-how-would-you-use-the-observed-values-x1-and-x2-to-estimate-the-standard-error-of-your-estimator}}
+
+I would find p1 and p2 using \[p_i = \frac{x_i}{n_i}\]. And then plug
+into formula found in 2b.
+
+\hypertarget{d.-if-n1-n2-200x1-127-and-x2-176-use-the-estimator-of-a-to-obtain-a-nestimate-of-p1p2.}{%
+\subsection{d.~If n1 = n2 = 200,X1 = 127, and x2= 176, use the estimator
+of (a) to obtain a nestimate of
+p1−p2.}\label{d.-if-n1-n2-200x1-127-and-x2-176-use-the-estimator-of-a-to-obtain-a-nestimate-of-p1p2.}}
+
+\[
+p1−p2 = \frac{127}{200} -\frac{176}{200} = -0.245
+\]
+
+\hypertarget{e.-use-the-result-of-part-c-and-the-data-of-part-d-to-estimate-the-standard-error-ofthe-estimator.}{%
+\subsection{e. Use the result of part (c) and the data of part (d) to
+estimate the standard error ofthe
+estimator.}\label{e.-use-the-result-of-part-c-and-the-data-of-part-d-to-estimate-the-standard-error-ofthe-estimator.}}
+
+\[
+p_1 = \frac{127}{200}=0.635
+\] \[
+p_2 = \frac{176}{200} = 0.88
+\] \[
+SE = \sqrt{200*0.635(1-0.635) + 200*0.88(1-0.88)} = 8.21
+\]
+
+\hypertarget{for-each-of-the-following-estimators-of-mean-if}{%
+\section{3. For each of the following estimators of mean if
+\ldots{}}\label{for-each-of-the-following-estimators-of-mean-if}}
+
+\hypertarget{a.}{%
+\subsection{a.}\label{a.}}
+
+\[\bar{X_5}\] is unbiased for \mu{]} because normal distribution is
+symetric about the mean. \#\# b. \[X_1-X_2+X_3-X_4+X_5\] is unbiased as
+\[X_n=X_{n+1}\],therefore everything except for one X cancels out. \#\#
+c. \[
+\frac{X_1+2X_2+3X_3+4X_4+5X_5}{15} = \frac{15X}{15} = X
+\] Therefore \[\frac{X_1+2X_2+3X_3+4X_4+5X_5}{15}\] is an unbiased
+estimate for \[\hat{\mu}\]
+
+\hypertarget{d.}{%
+\subsection{d.~}\label{d.}}
+
+\[1.01\bar{X}_5\] is not an unbiased estimate for \[\hat{\mu}\].
+Standard error is \[
+0.01*\bar{X}_5
+\] \# 4. Let Xi =, i=1,2..n be continuous random variables with pdf f(x)
+= \{Theta\}exp(-Theta x), x\textgreater0, We're given that
+Theta\textgreater0. The Xi's are independent.
+
+\hypertarget{a.-find-the-method-of-moments-estimator-of-theta-theta_mom}{%
+\subsection{a. Find the Method of Moments estimator of Theta,
+Theta\_mom}\label{a.-find-the-method-of-moments-estimator-of-theta-theta_mom}}
+
+\[
+E(X) = \int_0^\infty xf(x)dx = \int_0^\infty x\theta e^{-\theta x}dx = \frac{1}{\theta} = \bar{x}
+\] \[
+\theta_{Mom} = \frac{1}{\bar{x}}
+\] \#\# b. Is Theta\_mom unbiased for Theta
+
+\[\theta_{Mom}\] is unbiased assuming that n is sufficiently large, by
+the central limit theorem as distribution of \[\theta_{Mom}\] the normal
+distribution.
+
+\hypertarget{c.-find-the-likelihood-functionlux3b8.}{%
+\subsection{c.~Find the likelihood
+function,L(θ).}\label{c.-find-the-likelihood-functionlux3b8.}}
+
+\hypertarget{d.-find-the-maximum-likelihood-estimator-of-theta-theta_mle}{%
+\subsection{d.~Find the Maximum Likelihood estimator of Theta,
+Theta\_mle}\label{d.-find-the-maximum-likelihood-estimator-of-theta-theta_mle}}
+
+\hypertarget{e.-is-theta_mle-unbiased-for-theta}{%
+\subsection{e. Is Theta\_mle unbiased for
+Theta}\label{e.-is-theta_mle-unbiased-for-theta}}
+
+\hypertarget{let-yibernullip-i12..n}{%
+\section{5. Let Yi=Bernulli(p) i=1,2,..n}\label{let-yibernullip-i12..n}}
+
+\hypertarget{a.-find-the-method-of-moments-estimator-ofp.}{%
+\subsection{a. Find the Method of Moments estimator
+ofp.}\label{a.-find-the-method-of-moments-estimator-ofp.}}
+
+\hypertarget{b.-find-the-maximum-likelihood-estimator-ofp}{%
+\subsection{b. Find the Maximum Likelihood Estimator
+ofp}\label{b.-find-the-maximum-likelihood-estimator-ofp}}
+
+\hypertarget{c.-are-either-of-these-estimators-unbiased-forp}{%
+\subsection{c.~Are either of these estimators unbiased
+forp?}\label{c.-are-either-of-these-estimators-unbiased-forp}}
+
+\hypertarget{chapter-6-supplementary-exercise-32}{%
+\section{6. Chapter 6 Supplementary exercise \#
+32}\label{chapter-6-supplementary-exercise-32}}
+
+\hypertarget{a.-letx1xnbe-a-random-sample-from-a-uniform-distribution-on-0ux3b8.-hereux3b8-0.-then-the-mle-ofux3b8isux2c6ux3b8y-maxx1xn.-it-takes-some-work-toshow-this-is-the-mle-the-text-discusses-it-in-example-6.22.-you-are-not-asked-toshow-this-take-it-as-a-given.-show-that-the-pdf-ofy-is}{%
+\subsection{a. LetX1,\ldots,Xnbe a random sample from a uniform
+distribution on {[}0,θ{]}. (Here,θ \textgreater0.) Then the MLE
+ofθisˆθ=Y= max\{X1,\ldots,Xn\}. (It takes some work toshow this is the
+MLE; the text discusses it in Example 6.22. You are not asked toshow
+this; take it as a given.) Show that the pdf ofY
+is}\label{a.-letx1xnbe-a-random-sample-from-a-uniform-distribution-on-0ux3b8.-hereux3b8-0.-then-the-mle-ofux3b8isux2c6ux3b8y-maxx1xn.-it-takes-some-work-toshow-this-is-the-mle-the-text-discusses-it-in-example-6.22.-you-are-not-asked-toshow-this-take-it-as-a-given.-show-that-the-pdf-ofy-is}}
+
+\[
+f_Y(y) = \frac{ny^{n-1}}{\Theta^n}
+\] \#\# b. Use the result of part (a) to show that the MLE is biased,
+but y(n+1)/n is unbiased for Theta.
+
+\hypertarget{the-birthday-problem.-mars-experiences-just-under-667-martian-days-and-nights-eachtime-it-revolves-around-the-sun.-lets-pretend-its-exactly-667-days.-little-martianfur-babies-have-birthdays-that-are-uniformly-distributed-throughout-the-martian-year.letenbe-the-event-that-in-a-group-ofnrandomly-selected-martian-fur-babies-no-twoshare-the-same-martian-birthday-i.e.-all-of-them-have-distinct-birthdays}{%
+\section{7. The birthday problem. Mars experiences just under 667
+Martian days and nights eachtime it revolves around the sun. Let's
+pretend it's exactly 667 days. Little Martianfur-babies have birthdays
+that are uniformly distributed throughout the Martian year.LetEnbe the
+event that in a group ofnrandomly selected Martian fur-babies, no
+twoshare the same Martian birthday; i.e., all of them have distinct
+birthdays}\label{the-birthday-problem.-mars-experiences-just-under-667-martian-days-and-nights-eachtime-it-revolves-around-the-sun.-lets-pretend-its-exactly-667-days.-little-martianfur-babies-have-birthdays-that-are-uniformly-distributed-throughout-the-martian-year.letenbe-the-event-that-in-a-group-ofnrandomly-selected-martian-fur-babies-no-twoshare-the-same-martian-birthday-i.e.-all-of-them-have-distinct-birthdays}}
+
+\hypertarget{a.-find-pe2-the-probability-that-in-a-group-of-2-randomly-selected-martian-fur-babies-the-fur-babies-have-2-distinct-birthdays.}{%
+\subsection{a. Find P(E2), the probability that in a group of 2 randomly
+selected Martian fur-babies, the fur-babies have 2 distinct
+birthdays.}\label{a.-find-pe2-the-probability-that-in-a-group-of-2-randomly-selected-martian-fur-babies-the-fur-babies-have-2-distinct-birthdays.}}
+
+\[
+1/667
+\]
+
+\hypertarget{b.-findpe5.-findpec5-the-probability-that-in-a-group-of-5-randomly-selectedfur-babies-at-least-two-will-share-the-same-birthday}{%
+\subsection{b. FindP(E5). FindP(EC5), the probability that in a group of
+5 randomly selectedfur-babies, at least two will share the same
+birthday}\label{b.-findpe5.-findpec5-the-probability-that-in-a-group-of-5-randomly-selectedfur-babies-at-least-two-will-share-the-same-birthday}}
+
+\[
+1-\frac{667}{667}*\frac{666}{667}*\frac{665}{667}*\frac{664}{667}*\frac{663}{667}=1-0.985 = 0.015
+\]
+
+\hypertarget{c.-find-the-formula-forpen.}{%
+\subsection{c.~Find the formula
+forP(En).}\label{c.-find-the-formula-forpen.}}
+
+\[
+P(E_n) = 1-\frac{\frac{667!}{(667-n)!}}{(667)^n} = 1-\frac{667!}{(667-n)!*667^n}
+\]
+
+\hypertarget{extra-credit-referring-to-problem-7-for-which-group-sizen-is-pecn12-in-otherwords-how-many-fur-babies-does-it-take-before-theres-a-better-than-50-50-chance-that-two-or-more-of-them-will-share-the-same-birthday}{%
+\section{8. (Extra credit) Referring to problem 7: For which group sizen
+is P(ECn)\textgreater1/2? In otherwords, how many fur-babies does it
+take before there's a better than 50-50 chance that two or more of them
+will share the same
+birthday?}\label{extra-credit-referring-to-problem-7-for-which-group-sizen-is-pecn12-in-otherwords-how-many-fur-babies-does-it-take-before-theres-a-better-than-50-50-chance-that-two-or-more-of-them-will-share-the-same-birthday}}
+
+It takes 31 babies for there to be a 50-50 chance that they will share
+the same birthday
+
+\end{document}
