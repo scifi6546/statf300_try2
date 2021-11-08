@@ -90,7 +90,7 @@ $$
 
 ## b. Is Theta_mom unbiased for Theta
 
-Theta_mom is not an unbiased estimator as  1/E(X) != E(1/X).
+Theta_mom is an unbiased estimator 
 
 ## c. Find the likelihood function,L(θ).
 
@@ -167,7 +167,15 @@ $$
 
 ## b. Use the result of part (a) to show that the MLE is biased, but y(n+1)/n is unbiased for Theta.
 
-MLE is biased because it can never be above theta, but Y(n+1)/n is unbiased for Theta because it corrects for this bias.
+$$
+E(Y) \text{ should equal to} E(\theta) 
+$$
+$$
+E(Y) = \int_0^\theta \frac{yny^{n-1}}{\theta^n} = \int_0^\theta \frac{ny^{n}}{\theta^n} = (\frac{ny^{n+1}}{(n+1)\theta^n})|_0^\theta = \frac{n*\theta}{n+1} \neq E(\hat{\theta})
+
+$$
+Therefore MLE is biased but Y(n+1)/n is unbiased 
+
 # 7.  The birthday problem.  Mars experiences just under 667 Martian days and nights eachtime  it  revolves  around  the  sun.   Let’s  pretend  it’s  exactly  667  days.   Little  Martianfur-babies have birthdays that are uniformly distributed throughout the Martian year.LetEnbe the event that in a group ofnrandomly selected Martian fur-babies, no twoshare the same Martian birthday; i.e., all of them have distinct birthdays
 
 ## a. Find P(E2),  the probability that in a group of 2 randomly selected Martian fur-babies, the fur-babies have 2 distinct birthdays.
