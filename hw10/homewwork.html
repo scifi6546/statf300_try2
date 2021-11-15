@@ -325,17 +325,17 @@ for(i in 1:b){
   results[i]&lt;-mean(my.sample)
 }
 length(unique(results))</code></pre>
-<pre><code>## [1] 251</code></pre>
+<pre><code>## [1] 249</code></pre>
 <pre class="r"><code>lower.lim &lt;- quantile(results,0.025)
 upper.lim &lt;- quantile(results,0.975)
 c(lower.lim,upper.lim)</code></pre>
 <pre><code>##      2.5%     97.5% 
-## 0.8847368 0.9536842</code></pre>
+## 0.8852632 0.9521053</code></pre>
 </div>
 <div id="in-an-fbi-study-on-propery-crimes-a-sample-of-25-pickpocket-offenses-was-analyzed.the-data-amount-stolen-appear-to-come-from-a-normal-population.-the-mean-amountstolen-was513.32-and-the-sample-standard-deviation-was262.23.-find-and-interpret-a-95-confidence-interval-for-the-average-amount-stolen-by-pickpockets" class="section level1">
 <h1>9. In an FBI study on propery crimes, a sample of 25 pickpocket offenses was analyzed.The data (amount stolen) appear to come from a normal population. The mean amountstolen was$513.32 and the sample standard deviation was$262.23. Find and interpret a 95% confidence interval for the average amount stolen by pickpockets</h1>
 <p><span class="math display">\[
-\left(513.32-1.711*\frac{262.23}{\sqrt{25}},513.32+1.711*\frac{262.23}{\sqrt{25}}\right) = (513.32-79,513.32+79) = (433.37,592.70)
+\left(513.32-2.064*\frac{262.23}{\sqrt{25}},513.32+2.064*\frac{262.23}{\sqrt{25}}\right) = (513.32-108,513.32+108) = (404.98,621.47)
 \]</span></p>
 </div>
 <div id="for-the-following-pairs-of-hypotheses-indicate-whether-each-does-or-does-not-comply-with-our-rules-for-setting-up-hypotheses.-if-a-pair-doesnt-comply-with-the-rules-be-sure-to-say-why-not." class="section level1">

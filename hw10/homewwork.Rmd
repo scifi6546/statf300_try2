@@ -149,7 +149,7 @@ c(lower.lim,upper.lim)
 ```
 # 9. In an  FBI study on  propery crimes,  a  sample of 25  pickpocket offenses was  analyzed.The data (amount stolen) appear to come from a normal population.  The mean amountstolen was$513.32 and the sample standard deviation was$262.23.  Find and interpret a 95% confidence interval for the average amount stolen by pickpockets
 $$
-\left(513.32-1.711*\frac{262.23}{\sqrt{25}},513.32+1.711*\frac{262.23}{\sqrt{25}}\right) = (513.32-79,513.32+79) = (433.37,592.70)
+\left(513.32-2.064*\frac{262.23}{\sqrt{25}},513.32+2.064*\frac{262.23}{\sqrt{25}}\right) = (513.32-108,513.32+108) = (404.98,621.47)
 $$
 
 # 10. For  the  following  pairs  of  hypotheses,  indicate  whether  each  does  or  does  not  comply with our rules for setting up hypotheses.  If a pair doesn’t comply with the rules, be sure to say why not.
