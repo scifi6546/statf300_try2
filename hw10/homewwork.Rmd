@@ -80,8 +80,15 @@ It is not reasonable to assume that the data is normally distributed as the high
 
 ## c. Theinterpretation of this type of interval is this:  We are 99% confident that the true average impression depth lies below ____.
 ```{r}
-mean(Depth)-2.33*sd(Depth)/sqrt(length(Depth))
-t.test(Depth,conf.level=0.98)
+length(Depth) 
+qt(0.995,83) 
+```
+
+```{r}
+mean(Depth)-qt(0.995,83) *sd(Depth)/sqrt(length(Depth))
+```
+```{r}
+t.test(Depth,conf.level=0.99)
 ```
 We are 99% confident that the true average impression depth lies below 32.02.
 
