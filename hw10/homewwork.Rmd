@@ -81,6 +81,7 @@ It is not reasonable to assume that the data is normally distributed as the high
 ## c. Theinterpretation of this type of interval is this:  We are 99% confident that the true average impression depth lies below ____.
 ```{r}
 mean(Depth)-2.33*sd(Depth)/sqrt(length(Depth))
+t.test(Depth,conf.level=0.98)
 ```
 We are 99% confident that the true average impression depth lies below 32.02.
 
@@ -147,6 +148,7 @@ lower.lim <- quantile(results,0.025)
 upper.lim <- quantile(results,0.975)
 c(lower.lim,upper.lim)
 ```
+I dont 
 # 9. In an  FBI study on  propery crimes,  a  sample of 25  pickpocket offenses was  analyzed.The data (amount stolen) appear to come from a normal population.  The mean amountstolen was$513.32 and the sample standard deviation was$262.23.  Find and interpret a 95% confidence interval for the average amount stolen by pickpockets
 $$
 \left(513.32-2.064*\frac{262.23}{\sqrt{25}},513.32+2.064*\frac{262.23}{\sqrt{25}}\right) = (513.32-108,513.32+108) = (404.98,621.47)
