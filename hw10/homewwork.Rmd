@@ -85,12 +85,12 @@ qt(0.995,83)
 ```
 
 ```{r}
-mean(Depth)-qt(0.995,83) *sd(Depth)/sqrt(length(Depth))
+mean(Depth)+qt(0.995,83) *sd(Depth)/sqrt(length(Depth))
 ```
 ```{r}
-t.test(Depth,conf.level=0.99)
+t.test(Depth,conf.level=0.98)
 ```
-We are 99% confident that the true average impression depth lies below 32.02.
+We are 99% confident that the true average impression depth lies below 34.89442.
 
 # 5. In a Quinnipiac (KWIN-uh-pea-ack) University poll in late September, 2021, a sample ofapproximately 1000 registered Texas voters were asked whether abortion should be legalin cases of rape or incest.  Of these, approximately 77% said Yes; 16% said No, and 7%had other responses.  Using these figures as if they are exact (770 out of 1000 said Yes),construct a 95% confidence interval for the true proportion of all Texas registered voterswho would answer Yes to this question.  Interpret your CI. (Use the better of the twoformulas discussed in class, on page 168 of the lecture notes.)
 $$
@@ -155,7 +155,8 @@ lower.lim <- quantile(results,0.025)
 upper.lim <- quantile(results,0.975)
 c(lower.lim,upper.lim)
 ```
-I dont 
+The interval found in class was wider then the interval that I found.
+
 # 9. In an  FBI study on  propery crimes,  a  sample of 25  pickpocket offenses was  analyzed.The data (amount stolen) appear to come from a normal population.  The mean amountstolen was$513.32 and the sample standard deviation was$262.23.  Find and interpret a 95% confidence interval for the average amount stolen by pickpockets
 $$
 \left(513.32-2.064*\frac{262.23}{\sqrt{25}},513.32+2.064*\frac{262.23}{\sqrt{25}}\right) = (513.32-108,513.32+108) = (404.98,621.47)
