@@ -5,6 +5,7 @@ output:
   html_document:
     df_print: paged
   pdf_document: default
+  word_document: default
 ---
 
 # 1. §6.1 Modified #9.  Each of 150 newly manufactured items is examined, and the numberof scratches per item is recorded.  (The items are supposed to be free of scratches.)  Hereis the data:
@@ -60,7 +61,7 @@ $$
 # 3.  For each of the following estimators of mean if ...
 
 ## a.
-\[\bar{X_5}\] is unbiased for \mu\] because normal distribution is symetric about the mean.
+\[\bar{X_5}\] is unbiased for \mu\] because normal distribution is symmetric about the mean.
 
 ## b.
 \[X_1-X_2+X_3-X_4+X_5\] is unbiased as \[X_n=X_{n+1}\],therefore everything except for one X cancels out.
@@ -90,7 +91,11 @@ $$
 
 ## b. Is Theta_mom unbiased for Theta
 
-Theta_mom is an unbiased estimator 
+If Unbiased then E(Theta_mom) = Theta_mom
+$$
+E(\theta_{Mom}) = \frac{1}{E(x)} = \frac{1}{\frac{1}{\theta}} = \theta
+$$
+Therefore Theta_mom is unbiased for Theta
 
 ## c. Find the likelihood function,L(θ).
 
